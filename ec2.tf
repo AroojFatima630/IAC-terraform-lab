@@ -43,9 +43,10 @@ resource "aws_instance" "my_ec2" {
   key_name                    = aws_key_pair.my_key.key_name
   vpc_security_group_ids      = [aws_security_group.my_security_group.id]
 
-  tags = {
-    Name = "Terraform-EC2"
+    tags = {
+    Name = "Terraform-EC2-Dev"
   }
+
 }
 
 
